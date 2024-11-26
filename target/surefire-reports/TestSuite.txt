@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 425.7 s <<< FAILURE! -- in TestSuite
+runner.TestRunner.runScenario["Validate Revenue Calculator Page Load", "Revenue Calculator Functionality"](1) -- Time elapsed: 107.1 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (abc9701d129bc0f27e97773938a59c44)] -> xpath: //div[text()='Revenue Calculator']] (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55767}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55767/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abc9701d129bc0f27e97773938a59c44
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.ElementUtils.waitForWebElement(ElementUtils.java:26)
+	at utils.ElementUtils.clickOnWebElements(ElementUtils.java:30)
+	at pages.HomePage.clickOnRevenueCalculatorBtn(HomePage.java:49)
+	at stepdefinitions.RevenueCalculator.user_navigates_to_the_revenue_calculator_page(RevenueCalculator.java:33)
+	at ✽.User navigates to the Revenue Calculator page(file:///C:/SeleniumProjects/FitPeoCucumberProject/src/test/resource/features/RevenueCalculator.feature:10)
+
+runner.TestRunner.runScenario["Adjust the slider and validate its value", "Revenue Calculator Functionality"](2) -- Time elapsed: 105.5 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (a96697376722d62bed1552f52f07ed5a)] -> xpath: //div[text()='Revenue Calculator']] (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55918}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55918/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a96697376722d62bed1552f52f07ed5a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.ElementUtils.waitForWebElement(ElementUtils.java:26)
+	at utils.ElementUtils.clickOnWebElements(ElementUtils.java:30)
+	at pages.HomePage.clickOnRevenueCalculatorBtn(HomePage.java:49)
+	at stepdefinitions.RevenueCalculator.user_navigates_to_the_revenue_calculator_page(RevenueCalculator.java:33)
+	at ✽.User navigates to the Revenue Calculator page(file:///C:/SeleniumProjects/FitPeoCucumberProject/src/test/resource/features/RevenueCalculator.feature:10)
+
+runner.TestRunner.runScenario["Update the text field and validate slider position", "Revenue Calculator Functionality"](3) -- Time elapsed: 105.8 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (f7cbd17358ea0534860e2849c7408d42)] -> xpath: //div[text()='Revenue Calculator']] (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56149}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56149/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f7cbd17358ea0534860e2849c7408d42
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.ElementUtils.waitForWebElement(ElementUtils.java:26)
+	at utils.ElementUtils.clickOnWebElements(ElementUtils.java:30)
+	at pages.HomePage.clickOnRevenueCalculatorBtn(HomePage.java:49)
+	at stepdefinitions.RevenueCalculator.user_navigates_to_the_revenue_calculator_page(RevenueCalculator.java:33)
+	at ✽.User navigates to the Revenue Calculator page(file:///C:/SeleniumProjects/FitPeoCucumberProject/src/test/resource/features/RevenueCalculator.feature:10)
+
+runner.TestRunner.runScenario["Select CPT codes and validate total reimbursement", "Revenue Calculator Functionality"](4) -- Time elapsed: 104.9 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (ca30e4db4b79593413db4c04d9a7f73d)] -> xpath: //div[text()='Revenue Calculator']] (tried for 100 second(s) with 500 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56311}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56311/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca30e4db4b79593413db4c04d9a7f73d
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at utils.ElementUtils.waitForWebElement(ElementUtils.java:26)
+	at utils.ElementUtils.clickOnWebElements(ElementUtils.java:30)
+	at pages.HomePage.clickOnRevenueCalculatorBtn(HomePage.java:49)
+	at stepdefinitions.RevenueCalculator.user_navigates_to_the_revenue_calculator_page(RevenueCalculator.java:33)
+	at ✽.User navigates to the Revenue Calculator page(file:///C:/SeleniumProjects/FitPeoCucumberProject/src/test/resource/features/RevenueCalculator.feature:10)
+
