@@ -23,7 +23,8 @@ public class HomePage {
 	@FindBy(xpath="//h1[normalize-space(text())='Remote Patient'] ")
 	private WebElement verifyHomePage;
 
-		@FindBy(xpath="//div[text()='Revenue Calculator']")
+		//@FindBy(xpath="//div[text()='Revenue Calculator']")
+		@FindBy(xpath="//a[@href=\"/revenue-calculator\"]/child::div[text()='Revenue Calculator']")
 		private WebElement btnRevenueCalculator;
 		
 		
