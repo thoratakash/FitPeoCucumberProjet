@@ -47,7 +47,8 @@ public class HomePage {
 		}
 
 		public void clickOnRevenueCalculatorBtn() {
-			elementUtils.clickOnWebElements(btnRevenueCalculator, DriverFactory.EXPLICIT_TIMEOUT);
+			//elementUtils.clickOnWebElements(btnRevenueCalculator, DriverFactory.EXPLICIT_TIMEOUT);
+			elementUtils.javaScriptClick(btnRevenueCalculator, DriverFactory.EXPLICIT_TIMEOUT);
 		}
 	
 }//class
