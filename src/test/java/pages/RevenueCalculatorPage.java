@@ -90,9 +90,10 @@ public class RevenueCalculatorPage {
 	public void setSliderBarValueOnPage(int targetValue) {
 		
 		Actions actions = new Actions(driver);
-        actions.dragAndDropBy(slider,93,0) .perform();
-          System.out.println("Slider Current Value is : "+slider.getAttribute("value"));
-
+		//Using the drag-and-drop method, we are getting the current value as 797 and it moves the slider upto 820.
+                actions.dragAndDropBy(slider,93,0) .perform();
+		//Without using the drag-and-drop method, we are getting the current value as 200 and it moves the slider up to 820.
+                System.out.println("Slider Current Value is : "+slider.getAttribute("value"));
 		int currentValue = Integer.parseInt(sliderCurrentValueElement.getText());
 
 		// Adjust Slider Using Keyboard Arrows
